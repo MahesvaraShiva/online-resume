@@ -2,6 +2,11 @@
 <head>
     <title>My Resume</title>
     <style>
+        @media print {
+            .button {
+                display: none;
+            }
+        }
         .img {
             max-width: 25%;
             border-radius: 50%;
@@ -47,7 +52,7 @@
         <li>Analytical Skills</li>
         <li>Easily Adaptable</li>
     </ul>
-    <button onclick="window.print()">Print Resume to PDF</button>
+    <button class="button" onclick="window.print()">Print Resume to PDF</button>
 </body>
 <footer>Resume Crafted with HTML by Edjenson V. Protacio</footer>
 </html>
